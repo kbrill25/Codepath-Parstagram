@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -17,6 +18,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        //already logged in
+        if PFUser.current() != nil{
+            let main = UIStoryboard(name: "Main", bundle: nil)
+            
+            //instantiate the view controller
+            //"connect" it to the navigation controller
+            //this one is labelled "FeedNavigationController"
+            let feedNavigationController = main.instantiateViewController(identifier: "FeedNavigationController")
+            
+            //the contains everything else
+            //the window has the root view controller
+            window?.rootViewController = feedNavigationController
+            
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
