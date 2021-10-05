@@ -3,7 +3,7 @@
 
 This is an Instagram clone with a custom Parse backend that allows a user to post photos, view a global photos feed, and add comments!
 
-Time spent: **X** hours spent in total
+Time spent: **2** hours spent in total
 
 ## User Stories
 
@@ -49,4 +49,5 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
+<img src = "https://media.giphy.com/media/mPT7n4bzT2OZbu9KG6/giphy-downsized-large.gif" />
 <img src='https://media.giphy.com/media/o9DW5brGrFG9bPWXsm/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
